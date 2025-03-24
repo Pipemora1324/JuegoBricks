@@ -51,6 +51,7 @@ jobs:
           else
             git commit -m "🔧 Agregar archivos de prueba generados automáticamente"
             git push origin main
+          fi
 
       - name: 🧪 Ejecutar pruebas unitarias con Pytest y generar HTML
         run: |
