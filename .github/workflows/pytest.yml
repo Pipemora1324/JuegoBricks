@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: 📥 Clonar el repositorio y obtener el código fuente
         uses: actions/checkout@v3
 
@@ -70,5 +69,7 @@ jobs:
 
       - name: 🔄 Actualizar Codespaces después del push
         run: |
+          git reset --hard  # Limpiar cambios locales no guardados
+          git clean -fd     # Eliminar archivos no rastreados
           git remote set-url origin https://github.com/${{ github.repository }}.git
           git pull origin main --rebase
