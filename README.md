@@ -2,6 +2,11 @@
 
 ## 📦 Instalación de Dependencias
 
+# Proyecto JuegoBricks  
+
+#Este proyecto es parte de la actividad de calidad de software.  
+Desarrollado por: [JUAN FELIPE MORA REVELO] 
+
 Ejecuta los siguientes comandos para instalar las herramientas necesarias:
 
 ```bash
